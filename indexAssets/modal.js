@@ -199,7 +199,7 @@ $("#btnLogInSubmit").on("click", function(){
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     console.log(user);
-    window.location.href="index.html";
+    window.location.href="userpro.html";
    
   } else {
     console.log("nobody signed in");

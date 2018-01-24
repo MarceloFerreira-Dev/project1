@@ -128,12 +128,12 @@ firebase.auth().onAuthStateChanged(function(user) {
    
   } else {
     console.log("nobody signed in");
-    window.location.href="../welcome/welcome.html";
+    window.location.href="index.html";
   }
 });
 
 // sign out
 $("#signOut").on("click", function(){
   firebase.auth().signOut();
-  window.location.href="../welcome/welcome.html";
+  window.location.href="index.html";
 })
