@@ -25,7 +25,7 @@ $(".imageMood").on("click", function(){
   // get mood from image attribute
 	var selectMood = $(this).attr("data-name");
     console.log(selectMood);
-    var accessToken = "BQDmR3bHwMYlAC-yQTHKNRwkfuWwB51Y8qUFSe5FgdaK62QKieiZSCGHEWvIrAyhBglYRxPY0wMFuCdvi6Y81NlFiYcGmSGSa_K-JtHVJhfWCKLBe9W8TGWS87Dm9HuuHx4IbvgC374";
+    var accessToken = "BQDa5ujiaYLJvEihDnXq2Bq2KymJydTlqPA45FL0Oo0fGb2nWEckjy843N1p_DNSg_EBr_qkNTtZNM3u4O3vEkGGjwa0D_9TtYwnpNaY5vFe5Bi8T1GdkFbPztKVLT7L1RwVYA9f4_NkUDc86Ll2Gf_wfwd5pAMYNg";
     var typeOf = "track,artist";
 
     // Access spotify API
