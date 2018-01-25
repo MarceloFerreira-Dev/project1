@@ -25,8 +25,40 @@ $(".imageMood").on("click", function(){
   // get mood from image attribute
 	var selectMood = $(this).attr("data-name");
     console.log(selectMood);
-    var accessToken = "BQDa5ujiaYLJvEihDnXq2Bq2KymJydTlqPA45FL0Oo0fGb2nWEckjy843N1p_DNSg_EBr_qkNTtZNM3u4O3vEkGGjwa0D_9TtYwnpNaY5vFe5Bi8T1GdkFbPztKVLT7L1RwVYA9f4_NkUDc86Ll2Gf_wfwd5pAMYNg";
+    var accessToken = "BQBCBxgR89BRfgBH1RjqIvkNJWRwuEREr9HClrYA8Fzd8z1J-hRUIl_knsECgMHMJwOicJjNIcrxvBQPqJhwcfE20R3V_XVTFaW7heXRpYmgab6eS5NVIZCN1fkP22PBvVf21363J3dJQfZB7FmrbdlNqPKM6kDQXEY";
     var typeOf = "track,artist";
+    
+    // IoT API.
+    if(selectMood==="happy"){
+        var url = "http://172.20.10.12:500/TWO"; 
+      };
+    if(selectMood==="sad"){ 
+        var url = "http://172.20.10.12:500/THREE";   
+       };
+    if(selectMood==="focus"){ 
+        var url = "http://172.20.10.12:500/FOUR";   
+      };
+      if(selectMood==="excercise"){ 
+        var url = "http://172.20.10.12:500/FIVE";   
+      };
+      
+      
+    $.ajax({
+      url: url ,
+      headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      type: "GET", /* or type:"GET" or type:"PUT" */
+      dataType: "json",
+      data: {
+      },
+      success: function (result) {
+          console.log(result);    
+      },
+      error: function () {
+          console.log("error");
+      }
+  });
 
     // Access spotify API
     $.ajax({
