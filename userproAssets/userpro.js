@@ -25,7 +25,7 @@ $(".imageMood").on("click", function(){
   // get mood from image attribute
 	var selectMood = $(this).attr("data-name");
     console.log(selectMood);
-    var accessToken = "BQBCBxgR89BRfgBH1RjqIvkNJWRwuEREr9HClrYA8Fzd8z1J-hRUIl_knsECgMHMJwOicJjNIcrxvBQPqJhwcfE20R3V_XVTFaW7heXRpYmgab6eS5NVIZCN1fkP22PBvVf21363J3dJQfZB7FmrbdlNqPKM6kDQXEY";
+    var accessToken = "BQAM1xNAX7O4U19RyGffv0ysDDjJw35Vz2RN074LJpL2JyBVQhMWj4fVkhSo-U8HaLkoTlM9Lb8AwOv6W6w_jLAmbbjvMtDSRV_-irDHNoSw9esapuXcdIRJjLp14VzaUnA_P8WWDBJglPIU7VRyf8jiy1YcOkUvmvI";
     var typeOf = "track,artist";
     
     // IoT API.
